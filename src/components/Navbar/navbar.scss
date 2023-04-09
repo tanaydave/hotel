@@ -11,6 +11,31 @@
 
 }
 
+// .headerBtns{
+//     position:relative;
+//     left:27rem;
+//     margin-top: 2rem;
+// }
+
+// .navLink{
+//     color: var(--whiteColor) ;
+//     &:hover{
+//         color: var(--PrimaryColor);
+//     }
+// }
+// .navlists{
+//     padding:0 2rem;
+// }
+// .navItem{
+//     margin: 20px 20px 0;
+// }
+
+// .show{
+//     visibility:hidden;
+// }
+// .loginBtn{
+//     margin-right: 50px;
+// }
 .navBarSection {
     .header {
         position: fixed;
@@ -19,7 +44,7 @@
         justify-content: space-between;
         background: center;
         width: 100%;
-        padding: 1rem;
+        // padding: 1rem;
         z-index: 1000;
 
         .logoDiv {
@@ -38,6 +63,11 @@
         }
 
         @media screen and (max-width:768px) {
+            
+            .show{
+                visibility: visible;
+            }
+            
             .navBar {
                 background-color: var(--greyBg);
                 position: absolute;
@@ -124,6 +154,15 @@
             }
             .activeNavbar{
                 left:0;
+            }
+        }
+        .toggleNavbar{
+            .icon{
+                font-size: 25px;
+                color:(var(--whiteColor));
+                &:hover{
+                    color:(var(--PrimaryColor));
+                }
             }
         }
     }

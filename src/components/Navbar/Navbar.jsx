@@ -71,17 +71,17 @@ const hideNav = ()=>{
                 <button className="btn loginBtn">
                   <a href="#">Login</a>
                 </button>
-                <button className="btn">
+                <button className="btn ">
                   <a href="#">Sign Up</a>
                 </button>
               </div>
 
             </ul>
-            <div onClick={hideNav} className="closeNavbar">
+            <div onClick={hideNav} className="closeNavbar show">
               <AiFillCloseCircle className="icon"/>
             </div>
           </div>
-          <div onClick={showNav} className="toggleNavbar">
+          <div onClick={showNav} className="toggleNavbar show">
             <TbGridDots className="icon"/>
         
           </div>
