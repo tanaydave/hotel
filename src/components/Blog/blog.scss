@@ -1,0 +1,85 @@
+:root {
+    --PrimaryColor: hsl(26, 93%, 50%);
+    --HoverColor: hsl(26, 90%, 42%);
+    --whiteColor: hsl(0, 0%, 100%);
+    --blackColor: hsl(0, 0%, 18%);
+    --textColor: hsl(240, 1%, 48%);
+    --whiteColorDeam: hsl(0, 0%, 93%);
+    --greyBg: hsl(0, 0%, 96%);
+    --greyText: rgb(190, 190, 190);
+    --inputColor: hsl(330, 12%, 97%);
+    /* --boxShadow :box-shadow: 0 2px 8px 2px rgba(178,178,178,0.45); */
+
+}
+
+.blog {
+    .mainContainer {
+        gap: 2rem;
+
+        .singlePost {
+            .imgDiv {
+                height: 200px;
+                width: 100%;
+                border-radius: 1rem;
+                border:solid 5px var(--greyBg);
+                overflow: hidden;
+                box-shadow: 0 2px 8px 2px rgba(178, 178, 178, 0.400);
+
+                &:hover {
+                    transform: scale(1.1);
+                    transition: 3s ease;
+                }
+
+                img {
+                    height: 100%;
+                    object-fit: cover;
+
+
+
+                }
+
+            }
+
+            .postDetails {
+
+                h3 {
+                    color: var(--blackColor);
+                    font-weight: 600;
+                    padding-bottom: 10px;
+
+                }
+
+                p {
+                    font-size: 13px;
+                    color: var(--textColor);
+                    font-weight: 500;
+
+
+                }
+            }
+
+            a {
+
+                font-size: 15px;
+                font-weight: 600;
+                color: var(--PrimaryColor);
+                padding-top: .1rem;
+                width: max-content;
+
+                &:hover {
+                    color: var(--HoverColor);
+                    font-weight: 600;
+
+                    .icon {
+                        transform: translateX(10px);
+                    }
+                }
+            }
+
+
+
+
+        }
+    }
+
+}

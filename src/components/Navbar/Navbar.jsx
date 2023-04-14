@@ -13,18 +13,23 @@ const showNav = ()=>{
 const hideNav = ()=>{
   setActive('navBar')
 }
-// const [vis,setVis]= useState(true);
-// const visibility =  ()=>{
-//   setVis(!vis)
-// }
-// vis ? setActive('navBar activeNavbar'): setActive('navBar')
+ const [transparent,setTransparent]= useState('header');
+ const addBg = ()=>{
+  if(window.scrollY >=10){
+    setTransparent('header activeHeader')
+  }
+  else{
+    setTransparent('header')
+  }
+ }
+ window.addEventListener('scroll',addBg)
 
 
 
   return (
     
       <section className='navBarSection'>
-        <div className='header'>
+        <div className={transparent}>
           <div className='logoDiv'>
             <a href="#" className="logo">
               <h1 className='flex'>
