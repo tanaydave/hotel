@@ -127,11 +127,32 @@ input{
     }
     
 }
-@media screen and (min-width: 884px){
+@media screen and (min-width: 1240px){
     .container{
         width:75% !important;
         margin:auto;
              
     }
+    .section{
+        padding: 5rem 0 3rem;
+    }
+    .secIntro{
+        margin: 0 auto 3rem;
+    }
+    .secIntro,.secTitle{
+        line-height: 2rem;
+        padding-bottom: 1rem;
+        font-size: 2.2rem;
+
+    }
+    .secIntro p{
+        font-size: 15px;
+
+    }
     
+}
+@media  screen and (min-width:2000px){
+    body{
+        zoom:1.7
+    }
 }
