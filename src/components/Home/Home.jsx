@@ -4,7 +4,7 @@ import './home.scss'
 const Home = () => {
   return (
     <section className="home">
-      <div className="secConatiner container">
+      <div className="secContainer container">
         <div className="homeText">
           <h1 className="title">
             Plan Your Trip With Travel

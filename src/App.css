@@ -70,6 +70,9 @@ li{
     cursor: pointer;
     margin: .5rem;
 }
+.btn:hover {
+    background:var(--HoverColor);
+}
 
 
 
@@ -104,3 +107,31 @@ img,video{
 input{
     font-size: 100%;
 }  
+@media screen and (min-width: 556px){
+    .mainContent,.singlePost{
+        
+         
+       
+                grid-template-columns: repeat(2,1fr);
+             
+    }
+    
+}
+@media screen and (min-width: 884px){
+    .mainContent{
+        
+         
+       
+                grid-template-columns: repeat(3,1fr);
+             
+    }
+    
+}
+@media screen and (min-width: 884px){
+    .container{
+        width:75% !important;
+        margin:auto;
+             
+    }
+    
+}

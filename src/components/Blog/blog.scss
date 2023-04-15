@@ -83,3 +83,13 @@
     }
 
 }
+@media screen and (min-width: 884px){
+    .mainContainer{
+        
+         
+       
+                grid-template-columns: repeat(2,1fr);
+             
+    }
+    
+}
