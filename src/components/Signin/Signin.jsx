@@ -8,6 +8,7 @@ const Signin = () => {
 
    
     <div className="signin">
+      <Link to='/home'> home</Link>
       
     </div>
   )
